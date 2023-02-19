@@ -11,6 +11,8 @@ export const addWinsToPlayers = (playerDataArray, matchData) => {
         return accumulator;
       }
     }, 0);
+    player.wins = currentWins;
+
     return player;
   });
 };
